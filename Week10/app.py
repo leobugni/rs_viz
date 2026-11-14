@@ -42,7 +42,7 @@ def load_tiger_counties():
         print(gdf.head())
     return gdf
 
-url = "utah_counties_npp_change_2002_2022.csv"
+url = r"Week10/utah_counties_npp_change_2002_2022.csv"
 @st.cache_data
 def read_csv(url):
     df = pd.read_csv(url)
@@ -52,8 +52,8 @@ def read_csv(url):
     return df
 
 #rasters NPP 2002 and 2022
-npp_2002_path = "utah_npp_2002.tif"
-npp_2022_path = "utah_npp_2022.tif"
+npp_2002_path = r"Week10/utah_npp_2002.tif"
+npp_2022_path = r"Week10/utah_npp_2022.tif"
 
 
 
