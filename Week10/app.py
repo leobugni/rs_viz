@@ -15,7 +15,7 @@ st.set_page_config(page_title='NPP Dashboard', layout='wide')
 
 st.title('Net Primary Productivity Dashboard')
 st.write('This dashboard can be used for visualizing Net Primary Productivity (NPP) changes over time. ' \
-"Please select a county using the dropdown menu. It's boundary will be displayed over the NPP raster layer.  " \
+"Please select a county using the dropdown menu. Its boundary will be displayed over the NPP raster layer.  " \
 "Use the map layer control to toggle between the 2002 and 2022 NPP raster layers. " \
 'A quantitative bar chart shows the increase or descrease in NPP between 2002 and 2022 for each county.')
 
@@ -42,7 +42,7 @@ def load_tiger_counties():
         print(gdf.head())
     return gdf
 
-url = r"C:\Users\bugni\Documents\GEOG6835\Week10\utah_counties_npp_change_2002_2022.csv"
+url = "utah_counties_npp_change_2002_2022.csv"
 @st.cache_data
 def read_csv(url):
     df = pd.read_csv(url)
@@ -52,8 +52,8 @@ def read_csv(url):
     return df
 
 #rasters NPP 2002 and 2022
-npp_2002_path = r"C:\Users\bugni\Documents\GEOG6835\Week10\utah_npp_2002.tif"
-npp_2022_path = r"C:\Users\bugni\Documents\GEOG6835\Week10\utah_npp_2022.tif"
+npp_2002_path = "utah_npp_2002.tif"
+npp_2022_path = "utah_npp_2022.tif"
 
 
 
