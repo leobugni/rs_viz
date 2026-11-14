@@ -6,3 +6,5 @@ leafmap[folium] # or leafmap
 requests
 mapclassify
 rasterio
+xarray
+rioxarray
